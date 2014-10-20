@@ -1,0 +1,17 @@
+{
+  "name": "TravisTraining",
+  "version": "1.0.0",
+  "description": "Travis CI Training.",
+  "scripts": {
+    "test": "npm --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/masakura/TravisTraining.git"
+  },
+  "author": "Tomo Masakura <tomo.masakura@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/masakura/TravisTraining/issues"
+  },
+  "homepage": "https://github.com/masakura/TravisTraining"
+}

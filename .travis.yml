@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "0.10"
+notifications:
+  email:
+    recipients:
+      - tomo.masakura@gmail.com
+    on_success: always
+    on_failure: always
