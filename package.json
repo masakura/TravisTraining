@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Travis CI Training.",
   "scripts": {
-    "test": "npm --version"
+    "test": "grunt"
   },
   "repository": {
     "type": "git",
@@ -13,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/masakura/TravisTraining/issues"
   },
-  "homepage": "https://github.com/masakura/TravisTraining"
+  "homepage": "https://github.com/masakura/TravisTraining",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
 }
