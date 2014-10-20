@@ -3,22 +3,29 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-jscs');
+  grunt.loadNpmTasks('grunt-jasmine-node');
 
   grunt.initConfig({
     jshint: {
-      all: ['Gruntfile.js', 'hoge.js']
+      options: {
+        jshintrc: '.jshintrc',
+        reporter: require('jshint-stylish')
+      },
+      all: ['Gruntfile.js', 'hoge.js', 'spec/**/*.js']
     },
 
     jscs: {
-      all: ['Gruntfile.js', 'hoge.js']
+      all: ['Gruntfile.js', 'hoge.js', 'spec/**/*.js']
+    },
+
+    'jasmine_node': { // jshint ignore:line
+      all: ['spec']
     }
   });
 
   grunt.registerTask('jscheck', ['jshint', 'jscs']);
 
-  grunt.registerTask('test', function () {
-    grunt.log.write('TEST!');
-  });
+  grunt.registerTask('test', ['jasmine_node']);
 
   grunt.registerTask('fulltest', ['jscheck', 'test']);
 
