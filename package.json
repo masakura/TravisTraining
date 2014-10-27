@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Travis CI Training.",
   "scripts": {
-    "test": "grunt fulltest"
+    "test": "./test.sh"
   },
   "repository": {
     "type": "git",
