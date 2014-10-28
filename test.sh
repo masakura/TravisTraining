@@ -1,7 +1,5 @@
 #!/bin/sh
 
-node -v
-java -version
-ant -version
-android --help
-
+cordova create hoge
+cd hoge
+cordova platform add android
