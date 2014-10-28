@@ -2,4 +2,5 @@
 
 node -v
 java -version
+android help
 
