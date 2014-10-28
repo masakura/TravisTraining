@@ -3,6 +3,8 @@ node_js:
   - "0.10"
 before_install:
   - "npm install grunt-cli"
+scripts:
+  - "npm test"
 notifications:
   email:
     recipients:
