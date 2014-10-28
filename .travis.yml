@@ -1,6 +1,10 @@
 language: android
 node_js:
   - "0.10"
+android:
+  components:
+    - build-tools-20.0.0
+    - android-19
 before_install:
   - "npm install grunt-cli"
 script:
